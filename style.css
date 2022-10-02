@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.mike {
+    background-color: #81B82B;
+    border-radius: 50% 50% 50% 50% / 66% 66% 34% 34%;
+    height: 446px;
+    margin: 60px;
+    position: relative;
+    width: 392px;
+}
+
+.mike::before {
+    background-color: #76A328;
+    border-radius: 50%;
+    bottom: 30px;
+    content: '';
+    height: 10px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80px;
+}
+
+.eye {
+    background-color: #FFFF;
+    border-radius: 50%;
+    height: 200px;
+    left: 50%;
+    outline: 10px solid #76A328;
+    position: absolute;
+    top: 40px;
+    transform: translate(-50%);
+    width: 200px;
+}
+
+.eye::before{
+    background-image: linear-gradient( #1F537B, #05D5CE );
+    border-radius: 50%;
+    border: 5px solid;
+    bottom: 30px;
+    content: '';
+    height: 120px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 120px;
+}
+
+.pupil {
+    background-color: #000;
+    border-radius: 50%;
+    height: 90px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+}
+
+.pupil::before {
+    background-color: #FFFF;
+    border-radius: 50px;
+    content: '';
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    width: 20px;
+}
+
+.mouth {
+    background-color: #000;
+    border-radius: 50%;
+    bottom: 50px;
+    height: 80px;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-50%);
+    width: 180px;
+}
+
+.mouth::before {
+    background-color: #989B4C;
+    bottom: -25px;
+    content: '';
+    height: 50px;
+    position: absolute;
+    width: 100%;
+}
+
+
+.teeth {
+    background-color: #FFFF;
+    border-radius: 50%;
+    bottom: -16px;
+    box-shadow: 33px 4px, 66px 4px, 99px 4px;
+    color: #FFFF;
+    height: 35px;
+    left: 25px;
+    position: absolute;
+    width: 35px;
+}
+
+.ear {
+    border-radius: 50%;
+    box-shadow: -15px 15px 0 5px #A09E71;
+    height: 80px;
+    left: 110px;
+    position: absolute;
+    top: -14px;
+    width: 80px;
+    z-index: -1;
+}
+
+.ear-r {
+    box-shadow: 15px 15px 0 5px #A09E71;
+    left: initial;
+    right: 114px;
+}
